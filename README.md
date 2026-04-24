@@ -1,21 +1,55 @@
-# Slot Machine
+﻿# Promotional Reward Budget Simulator
 
-This repository contains a JavaScript implementation of a slot machine game titled Slot Machine Game. The game allows users to deposit money, place bets, spin the reels, and check for winnings, providing an engaging way to experience a classic casino game.
+## Overview
 
-<b>Key Features:</b>
+Promotional Reward Budget Simulator is a Node.js command-line tool for simulating weighted customer reward outcomes and reviewing campaign payout impact.
 
--Deposit System: Users can deposit an initial amount to start playing.
--Betting Mechanism: Players can select the number of lines to bet on and enter a bet amount per line.
--Randomized Reels: The game simulates a slot machine with randomized symbols on three reels.
--Winnings Calculation: Players can win based on matching symbols across the selected lines, with winnings calculated according to predefined symbol values.
--Replay Option: After each round, players can choose to continue playing or exit the game.
+This project upgrades a slot-machine style probability exercise into a more practical business-facing simulation tool. Instead of framing the logic around gambling, it now models promotional reward distribution for marketing campaigns, customer loyalty experiments, and budget planning.
 
-<b>How It Works:</b>
+## Real-World Business Use Case
 
--Deposit Money: Players start by entering a deposit amount.
--Select Lines and Bet: Users specify how many lines to bet on (1-3) and the amount to bet per line.
--Spin the Reels: The game spins the reels, displaying a random combination of symbols.
--Check for Winnings: The game checks if the symbols match across the selected lines and calculates any winnings.
--Play Again: Users can decide to play another round or exit if their balance reaches zero.
+This project maps to practical workflows used by:
 
-This project serves as a fun introduction to JavaScript programming, showcasing concepts such as user input handling, randomization, and basic game logic. It's an excellent resource for beginners looking to enhance their coding skills while creating an interactive application.
+- Marketing Operations Teams
+- Customer Loyalty Campaign Planning
+- Promotional Budget Reviews
+- Internal Reward Program Testing
+- JavaScript CLI Utility Development
+
+A team may need to answer questions such as:
+
+- How far could a promotional reward budget stretch?
+- Which reward tiers are likely to be distributed most often?
+- What is the estimated average payout per customer claim?
+- When does a campaign start becoming budget-risky?
+
+This utility is useful for quick internal simulations, rough campaign planning, and portfolio demonstration of turning probability logic into a safer and more practical business tool.
+
+## Key Features
+
+- Weighted Reward Distribution
+- Campaign Budget Input
+- Simulated Claim Volume
+- Reward Payout Summary
+- Budget Risk Feedback
+- Node.js CLI Workflow
+
+## Tech Stack
+
+- JavaScript
+- Node.js
+- prompt-sync
+
+## Repository Contents
+
+- `RewardSimulator.js`
+- `package.json`
+- `README.md`
+- `.gitignore`
+
+## How To Run
+
+### 1. Install Dependencies
+
+```powershell
+npm install

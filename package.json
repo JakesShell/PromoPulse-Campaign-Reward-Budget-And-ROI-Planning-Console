@@ -1,0 +1,12 @@
+﻿{
+  "name": "promotional-reward-budget-simulator",
+  "version": "1.0.0",
+  "description": "Node.js CLI tool for simulating weighted promotional rewards and reviewing campaign payout impact.",
+  "main": "RewardSimulator.js",
+  "scripts": {
+    "start": "node RewardSimulator.js"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
