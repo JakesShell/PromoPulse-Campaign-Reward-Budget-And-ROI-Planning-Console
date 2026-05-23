@@ -1,5 +1,9 @@
 ﻿# PromoPulse Campaign Reward Budget & ROI Planning Console
 
+## Live Demo
+
+[Open the live deployed app](https://promopulse-campaign-reward-budget-roi-planning-conso-16u48fklz.vercel.app)
+
 PromoPulse is a browser-based campaign planning dashboard for estimating promotional reward exposure, payout risk, and projected campaign lift before launching a reward campaign.
 
 ## Project Purpose
@@ -35,3 +39,4 @@ Open the browser dashboard:
 
 ```powershell
 Start-Process .\index.html
+
