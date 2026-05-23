@@ -1,55 +1,37 @@
-﻿# Promotional Reward Budget Simulator
+﻿# PromoPulse Campaign Reward Budget & ROI Planning Console
 
-## Overview
+PromoPulse is a browser-based campaign planning dashboard for estimating promotional reward exposure, payout risk, and projected campaign lift before launching a reward campaign.
 
-Promotional Reward Budget Simulator is a Node.js command-line tool for simulating weighted customer reward outcomes and reviewing campaign payout impact.
+## Project Purpose
 
-This project upgrades a slot-machine style probability exercise into a more practical business-facing simulation tool. Instead of framing the logic around gambling, it now models promotional reward distribution for marketing campaigns, customer loyalty experiments, and budget planning.
+This project began as a Node.js command-line reward simulator and was upgraded into a lightweight marketing finance console. It helps teams model expected reward claims, compare budget usage, and identify when a campaign is safe, watchlisted, or over budget.
 
-## Real-World Business Use Case
+## Features
 
-This project maps to practical workflows used by:
-
-- Marketing Operations Teams
-- Customer Loyalty Campaign Planning
-- Promotional Budget Reviews
-- Internal Reward Program Testing
-- JavaScript CLI Utility Development
-
-A team may need to answer questions such as:
-
-- How far could a promotional reward budget stretch?
-- Which reward tiers are likely to be distributed most often?
-- What is the estimated average payout per customer claim?
-- When does a campaign start becoming budget-risky?
-
-This utility is useful for quick internal simulations, rough campaign planning, and portfolio demonstration of turning probability logic into a safer and more practical business tool.
-
-## Key Features
-
-- Weighted Reward Distribution
-- Campaign Budget Input
-- Simulated Claim Volume
-- Reward Payout Summary
-- Budget Risk Feedback
-- Node.js CLI Workflow
+- Campaign budget input
+- Expected reward claims input
+- Average order value input
+- Conversion lift estimate
+- Weighted reward payout simulation
+- Projected reward cost
+- Remaining budget calculation
+- Average payout per claim
+- Estimated revenue lift
+- Reward distribution panel
+- Budget risk status
+- Responsive dashboard layout
+- Wide-screen and zoomed-out layout support
 
 ## Tech Stack
 
+- HTML
+- CSS
 - JavaScript
-- Node.js
-- prompt-sync
+- Node.js original simulator logic
 
-## Repository Contents
+## Run Locally
 
-- `RewardSimulator.js`
-- `package.json`
-- `README.md`
-- `.gitignore`
-
-## How To Run
-
-### 1. Install Dependencies
+Open the browser dashboard:
 
 ```powershell
-npm install
+Start-Process .\index.html

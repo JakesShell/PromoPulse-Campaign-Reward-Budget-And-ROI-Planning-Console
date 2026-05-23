@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromoPulse Campaign Reward Budget Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <strong>PromoPulse</strong>
+            <span>Campaign Reward Budget & ROI Planning Console</span>
+        </div>
+        <nav>
+            <a href="#planner">Planner</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#risk">Risk</a>
+        </nav>
+    </header>
+
+    <main class="app-shell">
+        <aside class="side-panel">
+            <p class="eyebrow">Campaign Console</p>
+            <h1>Reward budget planner</h1>
+            <p>Model promotional claims, expected payout, reward distribution, and campaign budget risk before launch.</p>
+
+            <div class="mini-card">
+                <span>Primary use</span>
+                <strong>Marketing finance</strong>
+                <small>Demo-only portfolio simulator</small>
+            </div>
+        </aside>
+
+        <section class="workspace" id="planner">
+            <section class="hero-card">
+                <div>
+                    <p class="eyebrow">Scenario Builder</p>
+                    <h2>Plan reward campaigns without overspending.</h2>
+                    <p>Adjust budget and claims to estimate payout pressure, remaining budget, and risk exposure.</p>
+                </div>
+
+                <form id="simulator-form" class="form-grid">
+                    <label>
+                        Campaign Budget
+                        <input id="budget" type="number" min="1" value="1000" />
+                    </label>
+
+                    <label>
+                        Expected Claims
+                        <input id="claims" type="number" min="1" value="250" />
+                    </label>
+
+                    <label>
+                        Average Order Value
+                        <input id="orderValue" type="number" min="1" value="28" />
+                    </label>
+
+                    <label>
+                        Conversion Lift %
+                        <input id="lift" type="number" min="0" value="12" />
+                    </label>
+
+                    <button type="submit">Run Simulation</button>
+                </form>
+            </section>
+
+            <section class="metric-grid">
+                <article class="metric-card">
+                    <span>Total Payout</span>
+                    <strong id="totalPayout">$0</strong>
+                    <small>Estimated reward cost</small>
+                </article>
+
+                <article class="metric-card">
+                    <span>Remaining Budget</span>
+                    <strong id="remainingBudget">$0</strong>
+                    <small>Budget after reward claims</small>
+                </article>
+
+                <article class="metric-card">
+                    <span>Avg Payout / Claim</span>
+                    <strong id="avgPayout">$0</strong>
+                    <small>Weighted reward average</small>
+                </article>
+
+                <article class="metric-card">
+                    <span>Projected Revenue Lift</span>
+                    <strong id="revenueLift">$0</strong>
+                    <small>Estimated promotional upside</small>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <article class="panel" id="rewards">
+                    <div class="section-header">
+                        <div>
+                            <p class="eyebrow">Reward Mix</p>
+                            <h3>Weighted campaign distribution</h3>
+                        </div>
+                        <span id="claimCountBadge">250 claims</span>
+                    </div>
+                    <div id="rewardList" class="reward-list"></div>
+                </article>
+
+                <article class="panel" id="risk">
+                    <div class="section-header">
+                        <div>
+                            <p class="eyebrow">Budget Risk</p>
+                            <h3 id="riskLabel">Ready to simulate</h3>
+                        </div>
+                        <span id="riskBadge">Pending</span>
+                    </div>
+                    <p id="riskMessage">Run a campaign scenario to see whether the reward pool is safe, watchlisted, or over budget.</p>
+                    <div class="progress-track">
+                        <div id="budgetBar"></div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <aside class="right-panel">
+            <p class="eyebrow">Scenario Summary</p>
+            <h2 id="scenarioStatus">Not simulated</h2>
+            <p id="scenarioSummary">Enter campaign assumptions and run the simulator.</p>
+
+            <div class="action-stack">
+                <button id="rerunBtn">Rerun Scenario</button>
+                <button id="resetBtn" class="ghost">Reset Inputs</button>
+            </div>
+
+            <p class="disclaimer">Prototype only. This does not process real customer data or financial transactions.</p>
+        </aside>
+    </main>
+
+    <footer class="bottom-cta">
+        <strong>Next step:</strong>
+        <span>Use this console to compare campaign reward exposure before approving a promotion.</span>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

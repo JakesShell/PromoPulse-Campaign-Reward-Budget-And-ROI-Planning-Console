@@ -1,10 +1,14 @@
 ﻿{
   "name": "promotional-reward-budget-simulator",
   "version": "1.0.0",
-  "description": "Node.js CLI tool for simulating weighted promotional rewards and reviewing campaign payout impact.",
+  "description": "Browser-based campaign reward budget and ROI planning console with original Node.js CLI simulator retained.",
   "main": "RewardSimulator.js",
   "scripts": {
-    "start": "node RewardSimulator.js"
+    "start": "powershell -NoProfile -ExecutionPolicy Bypass -Command Start-Process ./index.html",
+    "open": "powershell -NoProfile -ExecutionPolicy Bypass -Command Start-Process ./index.html",
+    "check": "node --check app.js",
+    "cli": "node RewardSimulator.js",
+    "slot": "node SlotMachine.js"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
