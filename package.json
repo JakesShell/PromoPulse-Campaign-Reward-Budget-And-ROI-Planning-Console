@@ -1,5 +1,5 @@
-﻿{
-  "name": "promotional-reward-budget-simulator",
+{
+  "name": "promopulse-campaign-reward-budget-roi-planning-console",
   "version": "1.0.0",
   "description": "Browser-based campaign reward budget and ROI planning console with original Node.js CLI simulator retained.",
   "main": "RewardSimulator.js",
