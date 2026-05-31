@@ -40,3 +40,10 @@ Open the browser dashboard:
 ```powershell
 Start-Process .\index.html
 
+
+---
+
+## Dashboard Preview
+
+![PromoPulse ROI Planning Dashboard](docs/screenshots/promopulse-roi-planning-dashboard.png)
+
